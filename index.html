@@ -9,7 +9,6 @@
   
   body{background-color: lightyellow;}
   .bgcolor--blue{background-color: lightblue;}
-  .bgcolor--red{background-color: lightpink;}
   .bgcolor--gray{ background-color: lightgray;}
 
   </style>
@@ -30,10 +29,6 @@
       document.body.classList.toggle('bgcolor--blue');
       //console.log('버튼클릭');
     });
-
-    btnToggle.addEventListener('click', function(){
-      document.body.classList.toggle('bgcolor--red');
-    })
 
     const btnReset = document.querySelector('.btn--reset');
     btnReset.addEventListener('click',function(){
