@@ -11,6 +11,7 @@
   transition: all 1s;}
   .bgcolor--blue{background-color: lightblue;}
   .bgcolor--gray{ background-color: lightgray;}
+  .bgcolor--img{background-image: url(img/4882066.jpg);}
   .btns{position: relative; top: 150px; width: 600px; margin: auto; text-align: center;}
   .btn_toggle{border: 1px solid skyblue; background-color:white;border-top-left-radius: 5px; border-bottom-left-radius: 5px; padding: 7px;}
   .btn--reset{border: 1px solid skyblue; background-color:white; padding: 7px; background-color: skyblue; color: white; margin-left: -7px; }
@@ -26,6 +27,7 @@
   <button class="btn_toggle">배경색상변경 토글버튼</button>
   <button class="btn--reset">배경색상 리셋</button>
   <button class="btn--bggray">배경색상변경 그레이</button>
+  <button class="btn--bgimg">배경이미지</button>
   </div>
 
   <script>
@@ -39,13 +41,17 @@
 
     const btnReset = document.querySelector('.btn--reset');
     btnReset.addEventListener('click',function(){
-      document.body.classList.remove('bgcolor--blue','bgcolor--gray');
+      document.body.classList.remove('bgcolor--blue','bgcolor--gray','bgcolor--img');
     });
 
     const btnBgGray = document.querySelector('.btn--bggray');
     btnBgGray.addEventListener('click', function(){
       document.body.classList.add('bgcolor--gray');
     });
+
+    const btnBgImg = document.querySelector('.btn--bgimg');
+    btnBgImg.addEventListener('click',function(){
+      document.body.classList.add('bgcolor--img');});
 
   </script>
   
